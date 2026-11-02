@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#060819">
-    <meta name="description" content="IT-курсы для школьников 5–10 классов: Python, игры, сайты, AI и автоматизация. 80% практики.">
+    <meta name="description" content="IT-курсы для школьников 1–10 классов: Python, игры, сайты, AI и автоматизация. 80% практики.">
     <title>Курсы программирования</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -36,7 +36,7 @@
       <section class="hero container" id="home">
         <div class="hero-copy">
           <div class="eyebrow">
-            <span class="pulse"></span><span data-i18n="eyebrow">НАБОР НА IT-КУРСЫ · 5–10 КЛАССЫ</span>
+            <span class="pulse"></span><span data-i18n="eyebrow">НАБОР НА IT-КУРСЫ · 1–10 КЛАССЫ</span>
           </div>
           <h1 data-i18n-html="heroTitle">Вместе готовим<br><span class="gradient-text">IT-специалистов</span><br>будущего</h1>
           <p class="lead" data-i18n="heroDesc">От первой игры на Python до собственного сайта и автоматизации с искусственным интеллектом. Учимся через реальные проекты.</p>
@@ -49,15 +49,15 @@
               <strong>80%</strong><span data-i18n="statPractice">практики</span>
             </div>
             <div>
-              <strong>2</strong><span data-i18n="statTracks">направления</span>
+              <strong>4</strong><span data-i18n="statTracks">направления</span>
             </div>
             <div>
-              <strong>5–10</strong><span data-i18n="statGrades">классы</span>
+              <strong>1–10</strong><span data-i18n="statGrades">классы</span>
             </div>
           </div>
         </div>
         <div class="hero-art hero-illustration">
-          <img class="hero-student" src="hero-student.png" alt="Ученик с ноутбуком в неоновом технологичном пространстве" width="1536" height="1024" fetchpriority="high">
+          <img class="hero-student" src="assets/hero-student.png" alt="Ученик с ноутбуком в неоновом технологичном пространстве" width="1536" height="1024" fetchpriority="high">
           <span class="hero-art-label" aria-hidden="true">&lt;/&gt; CREATE YOUR FUTURE</span>
         </div>
       </section>
@@ -70,11 +70,55 @@
       <section class="section container" id="courses">
         <div class="section-top">
           <div>
-            <span class="kicker" data-i18n="coursesKicker">ВЫБЕРИ СВОЙ ПУТЬ</span><h2 data-i18n-html="coursesTitle">Два направления.<br><span class="gradient-text">Безграничные возможности.</span></h2>
+            <span class="kicker" data-i18n="coursesKicker">ВЫБЕРИ СВОЙ ПУТЬ</span><h2 data-i18n-html="coursesTitle">Четыре направления.<br><span class="gradient-text">Безграничные возможности.</span></h2>
           </div>
           <p data-i18n="coursesDesc">Программы адаптированы под возраст. Начинаем с основ и сразу создаём настоящие проекты.</p>
         </div>
         <div class="course-grid">
+          <!-- Game Lab Junior: программа для 1–2 классов -->
+          <article class="course-card junior">
+            <div class="card-top">
+              <span class="chip" data-i18n="grade12">1–2 КЛАССЫ</span>
+              <span class="course-icon" aria-hidden="true">🧩</span>
+            </div>
+            <div class="card-visual lab-visual" aria-hidden="true">
+              <span class="lab-controller">🧩</span>
+              <span class="lab-block">MOVE →</span>
+              <span class="lab-block lab-repeat">↻ REPEAT</span>
+              <span class="lab-spark">✦</span>
+            </div>
+            <h3>Game Lab <span class="lab-name">Junior</span></h3>
+            <p data-i18n="juniorDesc">Первые шаги в мире компьютеров и программирования через игру, творчество и понятные задания.</p>
+            <div class="tags"><span>ScratchJr / Scratch</span><span data-i18n="logic">Алгоритмы</span></div>
+            <ul>
+              <li data-i18n="junior1">Основы работы с компьютером и логика</li>
+              <li data-i18n="junior2">ScratchJr / Scratch: первые алгоритмы</li>
+              <li data-i18n="junior3">Интерактивные истории и анимация</li>
+            </ul>
+            <a href="#signup" class="card-link" data-track="junior" data-i18n="choose">Выбрать направление ↗</a>
+          </article>          <!-- Game Lab Creator: программа для 3–4 классов -->
+          <article class="course-card creator">
+            <div class="card-top">
+              <span class="chip" data-i18n="grade34">3–4 КЛАССЫ</span>
+              <span class="course-icon" aria-hidden="true">🎮</span>
+            </div>
+            <div class="card-visual lab-visual" aria-hidden="true">
+              <span class="lab-controller">🎮</span>
+              <span class="lab-block">MOVE →</span>
+              <span class="lab-block lab-repeat">↻ REPEAT</span>
+              <span class="lab-spark">✦</span>
+            </div>
+            <h3>Game Lab <span class="lab-name">Creator</span></h3>
+            <p data-i18n="creatorDesc">Создаём собственные игры в Scratch: от идеи и персонажей до уровней и презентации проекта.</p>
+            <div class="tags"><span>Scratch</span><span data-i18n="logic">Алгоритмы</span></div>
+            <ul>
+              <li data-i18n="creator1">Циклы, условия и система очков</li>
+              <li data-i18n="creator2">Собственные персонажи и уровни</li>
+              <li data-i18n="creator3">Мини-проект и его презентация</li>
+            </ul>
+            <a href="#signup" class="card-link" data-track="creator" data-i18n="choose">Выбрать направление ↗</a>
+          </article>
+
           <article class="course-card game">
             <div class="card-top">
               <span class="chip" data-i18n="grade57">5–7 КЛАССЫ</span><span class="course-icon">🎮</span>
@@ -217,7 +261,7 @@
           </details>
           <details>
             <summary data-i18n="q3">Что ребёнок создаст на курсе?</summary>
-            <p data-i18n="a3">В зависимости от направления — собственную игру на Python, сайт или проект с AI-автоматизацией.</p>
+            <p data-i18n="a3">В зависимости от направления — интерактивную историю или игру в Scratch, игру на Python, сайт или проект с AI-автоматизацией.</p>
           </details>
           <details>
             <summary data-i18n="q4">Где узнать расписание и стоимость?</summary>
@@ -225,7 +269,7 @@
           </details>
           <details>
             <summary data-i18n="q5">Для каких классов подходят курсы?</summary>
-            <p data-i18n="a5">Курсы рассчитаны на учеников 5–10 классов. Python и создание игр — для 5–7 классов, сайты и AI-автоматизация — для 8–10 классов.</p>
+            <p data-i18n="a5">Game Lab Junior — для 1–2 классов, Game Lab Creator — для 3–4 классов, Python и создание игр — для 5–7 классов, сайты и AI-автоматизация — для 8–10 классов.</p>
           </details>
           <details>
             <summary data-i18n="q6">Что изучают на направлении Python?</summary>
@@ -254,12 +298,18 @@
         <form class="signup-form" id="signupForm">
           <label for="parent" data-i18n="labelName">Ваше имя</label>
           <input id="parent" name="parent" type="text" autocomplete="name" maxlength="70" required data-placeholder="namePlaceholder" placeholder="Как к вам обращаться?"><label for="grade" data-i18n="labelGrade">Класс ученика</label><select id="grade" name="grade" required><option value="" data-i18n="gradePlaceholder">Выберите класс</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
           <option value="5">5</option>
           <option value="6">6</option>
           <option value="7">7</option>
           <option value="8">8</option>
           <option value="9">9</option>
           <option value="10">10</option></select><label for="track" data-i18n="labelCourse">Направление</label><select id="track" name="track" required><option value="" data-i18n="coursePlaceholder">Выберите направление</option>
+          <option value="junior" data-i18n="optionJunior">Game Lab Junior · 1–2 классы</option>
+          <option value="creator" data-i18n="optionCreator">Game Lab Creator · 3–4 классы</option>
           <option value="python" data-i18n="optionPython">Python и создание игр</option>
           <option value="web" data-i18n="optionWeb">Сайты и AI-автоматизация</option></select><button class="btn primary submit" type="submit"><span data-i18n="submit">Записаться через WhatsApp</span> ↗</button><small data-i18n="privacy">Данные не сохраняются на сайте. Сообщение откроется в WhatsApp.</small>
         </form>
