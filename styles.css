@@ -1235,3 +1235,50 @@ body {
   .faq-list summary { font-size: 14px; }
   .signup-section { padding-bottom: 60px; }
 }
+/* GAME LAB: оформление программ для 1–4 классов */
+.course-card.junior {
+  background: radial-gradient(ellipse at top left, #09895b55, transparent 75%), #081f25;
+  border-color: #20d8a0;
+  box-shadow: inset 0 -2px 24px #1bdfa012;
+}
+.course-card.creator {
+  background: radial-gradient(ellipse at top left, #8426b466, transparent 75%), #1b0c32;
+  border-color: #c35bfa;
+  box-shadow: inset 0 -2px 24px #bb3bff18;
+}
+.junior .chip { background: #14d99426; color: #9cffd5; }
+.creator .chip { background: #c055ec26; color: #efd1ff; }
+.junior .lab-name, .junior .card-link { color: #6cf5b8; }
+.creator .lab-name, .creator .card-link { color: #f2df69; }
+.lab-visual {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #050b1a55;
+}
+.lab-controller { font-size: 78px; filter: drop-shadow(0 0 24px #b566ff55); }
+.lab-block {
+  position: absolute;
+  top: 24px;
+  left: 22px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #2782d8;
+  color: #fff;
+  font: 700 11px ui-monospace, Consolas, monospace;
+  transform: rotate(-8deg);
+}
+.lab-repeat {
+  background: #8843d5;
+  left: auto;
+  top: auto;
+  right: 18px;
+  bottom: 19px;
+  transform: rotate(8deg);
+}
+.lab-spark { position: absolute; top: 16px; right: 25px; color: #ffe56c; font-size: 28px; }
+@media (prefers-reduced-motion: no-preference) {
+  .lab-controller { animation: float-tech 5s ease-in-out infinite; }
+  .lab-block { animation: float-tech 6s ease-in-out infinite; }
+  .lab-repeat { animation-delay: -3s; }
+}
