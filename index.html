@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#060819">
+    <meta name="description" content="IT-курсы для школьников 5–10 классов: Python, игры, сайты, AI и автоматизация. 80% практики.">
+    <title>Курсы программирования</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="ambient a">
+    </div>
+    <div class="ambient b">
+    </div>
+    <!-- Шапка сайта: логотип, меню и выбор языка -->
+    <header class="header">
+      <a href="#home" class="brand" aria-label="На главную"><span class="brand-mark">&lt;/&gt;</span></a>
+      <nav id="nav" class="nav">
+        <a href="#courses" data-i18n="navCourses">Курсы</a>
+        <a href="#approach" data-i18n="navApproach">Обучение</a>
+        <a href="#faq" data-i18n="navFaq">Вопросы</a>
+        <a class="nav-cta" href="#signup" data-i18n="navSignup">Записаться</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" role="group" aria-label="Language">
+          <button id="ru" class="selected" aria-pressed="true">RU</button>
+          <button id="kk" aria-pressed="false">ҚАЗ</button>
+        </div>
+        <button id="menu" class="menu" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+    <main>
+      <!-- Тексты с data-i18n также меняйте в translations в script.js для RU и KK. -->
+      <!-- Главный экран -->
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="pulse"></span><span data-i18n="eyebrow">НАБОР НА IT-КУРСЫ · 5–10 КЛАССЫ</span>
+          </div>
+          <h1 data-i18n-html="heroTitle">Вместе готовим<br><span class="gradient-text">IT-специалистов</span><br>будущего</h1>
+          <p class="lead" data-i18n="heroDesc">От первой игры на Python до собственного сайта и автоматизации с искусственным интеллектом. Учимся через реальные проекты.</p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="#signup"><span data-i18n="start">Записаться на курс</span><span>↗</span></a>
+            <a class="btn ghost" href="#courses"><span data-i18n="explore">Посмотреть направления</span><span>↓</span></a>
+          </div>
+          <div class="stats">
+            <div>
+              <strong>80%</strong><span data-i18n="statPractice">практики</span>
+            </div>
+            <div>
+              <strong>2</strong><span data-i18n="statTracks">направления</span>
+            </div>
+            <div>
+              <strong>5–10</strong><span data-i18n="statGrades">классы</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-art hero-illustration">
+          <img class="hero-student" src="assets/hero-student.png" alt="Ученик с ноутбуком в неоновом технологичном пространстве" width="1536" height="1024" fetchpriority="high">
+          <span class="hero-art-label" aria-hidden="true">&lt;/&gt; CREATE YOUR FUTURE</span>
+        </div>
+      </section>
+      <section class="strip">
+        <div class="container strip-inner">
+          <span data-i18n="strip1">ПРОГРАММИРОВАНИЕ</span><span>✳</span><span data-i18n="strip2">РАЗРАБОТКА ИГР</span><span>✳</span><span>WEB DEVELOPMENT</span><span>✳</span><span>AI & AUTOMATION</span>
+        </div>
+      </section>
+      <!-- Курсы: добавляйте новые карточки article внутри course-grid -->
+      <section class="section container" id="courses">
+        <div class="section-top">
+          <div>
+            <span class="kicker" data-i18n="coursesKicker">ВЫБЕРИ СВОЙ ПУТЬ</span><h2 data-i18n-html="coursesTitle">Два направления.<br><span class="gradient-text">Безграничные возможности.</span></h2>
+          </div>
+          <p data-i18n="coursesDesc">Программы адаптированы под возраст. Начинаем с основ и сразу создаём настоящие проекты.</p>
+        </div>
+        <div class="course-grid">
+          <article class="course-card game">
+            <div class="card-top">
+              <span class="chip" data-i18n="grade57">5–7 КЛАССЫ</span><span class="course-icon">🎮</span>
+            </div>
+            <div class="card-visual">
+              <span class="pixel p1"></span><span class="pixel p2"></span><span class="pixel p3"></span>
+              <div class="game-avatar">
+                👾
+              </div>
+              <div class="mini-code">
+                if player.jump():<br>&nbsp;&nbsp;score += 10
+              </div>
+            </div>
+            <h3 data-i18n="gameTitle">Python + создание игр</h3>
+            <p data-i18n="gameDesc">Изучаем основы программирования через увлекательные игры, персонажей и собственные проекты.</p>
+            <div class="tags">
+              <span>Python</span><span>Pygame</span><span data-i18n="logic">Алгоритмы</span>
+            </div>
+            <ul>
+              <li data-i18n="game1">Первые программы с нуля</li>
+              <li data-i18n="game2">Игровая логика и управление</li>
+              <li data-i18n="game3">Собственная 2D-игра</li>
+            </ul>
+            <a href="#signup" class="card-link" data-i18n="choose">Выбрать направление ↗</a>
+          </article>
+          <article class="course-card web">
+            <div class="card-top">
+              <span class="chip" data-i18n="grade810">8–10 КЛАССЫ</span><span class="course-icon">🌐</span>
+            </div>
+            <div class="card-visual web-visual">
+              <div class="web-window">
+                <div class="web-header">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="web-content">
+                  <div class="web-sidebar">
+                  </div>
+                  <div class="web-main">
+                    <div class="web-line">
+                    </div>
+                    <div class="web-line short">
+                    </div>
+                    <div class="web-blocks">
+                      <i></i><i></i><i></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ai-bubble">
+                ✦ AI
+              </div>
+              <div class="flow-bubble">
+                ⤳ n8n
+              </div>
+            </div>
+            <h3 data-i18n="webTitle">Сайты + AI-автоматизация</h3>
+            <p data-i18n="webDesc">Создаём сайты, изучаем JavaScript и автоматизируем задачи с помощью современных AI-инструментов.</p>
+            <div class="tags">
+              <span>HTML / CSS</span><span>JavaScript</span><span>n8n</span><span>Make.com</span><span>AI</span>
+            </div>
+            <ul>
+              <li data-i18n="web1">Собственный адаптивный сайт</li>
+              <li data-i18n="web2">Интерактивность на JavaScript</li>
+              <li data-i18n="web3">AI и сценарии автоматизации</li>
+            </ul>
+            <a href="#signup" class="card-link" data-i18n="choose">Выбрать направление ↗</a>
+          </article>
+        </div>
+      </section>
+      <!-- Преимущества обучения -->
+      <section class="section container" id="approach">
+        <div class="section-top">
+          <div>
+            <span class="kicker" data-i18n="approachKicker">НАШ ПОДХОД</span><h2 data-i18n-html="approachTitle">Меньше теории.<br><span class="gradient-text">Больше дела.</span></h2>
+          </div>
+          <p data-i18n="approachDesc">Каждое занятие приближает ученика к готовому проекту, который можно показать друзьям и родителям.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature featured">
+            <span class="feature-icon">⚡</span>
+            <div class="big-number">
+              80<span>%</span>
+            </div>
+            <h3 data-i18n="feature1Title">Практика с первого занятия</h3>
+            <p data-i18n="feature1Desc">Не просто смотрим на код — пишем, запускаем, исправляем и создаём.</p>
+            <div class="progress">
+              <span></span>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🧩</span><h3 data-i18n="feature2Title">Понятно с нуля</h3>
+            <p data-i18n="feature2Desc">Сложные темы объясняем простыми словами и на знакомых примерах.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🚀</span><h3 data-i18n="feature3Title">Реальные проекты</h3>
+            <p data-i18n="feature3Desc">Игры, сайты и автоматизации — результаты, которыми можно гордиться.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🤝</span><h3 data-i18n="feature4Title">Поддержка преподавателя</h3>
+            <p data-i18n="feature4Desc">Помогаем разобраться, задавать вопросы и доводить идеи до результата.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="steps-box">
+          <div>
+            <span class="kicker" data-i18n="journeyKicker">КАК ПРОХОДИТ ОБУЧЕНИЕ</span><h2 data-i18n-html="journeyTitle">От первой строчки кода<br>до <span class="gradient-text">своего проекта</span></h2>
+          </div>
+          <div class="steps">
+            <div>
+              <span>01</span><h3 data-i18n="step1Title">Знакомство с IT</h3>
+              <p data-i18n="step1Desc">Пара вводных уроков о компьютерах, интернете и профессиях.</p>
+            </div>
+            <div>
+              <span>02</span><h3 data-i18n="step2Title">Выбор направления</h3>
+              <p data-i18n="step2Desc">Ученик выбирает то, что ему действительно интересно.</p>
+            </div>
+            <div>
+              <span>03</span><h3 data-i18n="step3Title">Создание проекта</h3>
+              <p data-i18n="step3Desc">Учимся на практике и собираем собственное портфолио.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Вопросы и ответы: добавляйте блоки details внутри faq-list -->
+      <section class="section container" id="faq">
+        <div class="section-top">
+          <div>
+            <span class="kicker">FAQ</span><h2 data-i18n="faqTitle">Частые вопросы</h2>
+          </div>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary data-i18n="q1">Нужны ли знания программирования?</summary>
+            <p data-i18n="a1">Нет. Мы начинаем с нуля и постепенно переходим к практике.</p>
+          </details>
+          <details>
+            <summary data-i18n="q2">Как выбрать направление?</summary>
+            <p data-i18n="a2">Сначала познакомимся с IT и направлениями, затем поможем выбрать программу по возрасту и интересам.</p>
+          </details>
+          <details>
+            <summary data-i18n="q3">Что ребёнок создаст на курсе?</summary>
+            <p data-i18n="a3">В зависимости от направления — собственную игру на Python, сайт или проект с AI-автоматизацией.</p>
+          </details>
+          <details>
+            <summary data-i18n="q4">Где узнать расписание и стоимость?</summary>
+            <p data-i18n="a4">Напишите нам в WhatsApp — расскажем об актуальных группах, расписании и условиях.</p>
+          </details>
+          <details>
+            <summary data-i18n="q5">Для каких классов подходят курсы?</summary>
+            <p data-i18n="a5">Курсы рассчитаны на учеников 5–10 классов. Python и создание игр — для 5–7 классов, сайты и AI-автоматизация — для 8–10 классов.</p>
+          </details>
+          <details>
+            <summary data-i18n="q6">Что изучают на направлении Python?</summary>
+            <p data-i18n="a6">Ученики знакомятся с основами Python, условиями, циклами и алгоритмами, затем применяют их для создания персонажей, игровой логики и собственной 2D-игры.</p>
+          </details>
+          <details>
+            <summary data-i18n="q7">Чему научат на направлении веб-разработки?</summary>
+            <p data-i18n="a7">Ученики создают страницы на HTML и CSS, добавляют интерактивность с помощью JavaScript и знакомятся с AI-инструментами и сценариями автоматизации.</p>
+          </details>
+          <details>
+            <summary data-i18n="q8">Что делать, если ребёнок пока не определился с направлением?</summary>
+            <p data-i18n="a8">Начните со знакомства с IT: первые вводные занятия помогут понять, что интереснее — создание игр или разработка сайтов. Затем можно выбрать направление с учётом возраста и интересов.</p>
+          </details>
+          <details>
+            <summary data-i18n="q9">Как записаться на курс?</summary>
+            <p data-i18n="a9">Укажите имя, класс ученика и направление в форме ниже. Нажмите «Записаться через WhatsApp» — откроется готовое сообщение. Отправьте его в мессенджере, чтобы обсудить запись.</p>
+          </details>
+        </div>
+      </section>
+      <section class="section container signup-section" id="signup">
+        <div class="signup-copy">
+          <span class="kicker" data-i18n="signupKicker">НАЧНИ СЕГОДНЯ</span><h2 data-i18n-html="signupTitle">Первый шаг в IT<br><span class="gradient-text">начинается здесь.</span></h2>
+          <p data-i18n="signupDesc">Оставьте информацию — мы подготовим сообщение для WhatsApp. Отправка произойдёт только после вашего подтверждения в мессенджере.</p>
+          <a class="phone" href="tel:+77766962244">☎ +7 776 696 22 44</a>
+        </div>
+        <form class="signup-form" id="signupForm">
+          <label for="parent" data-i18n="labelName">Ваше имя</label>
+          <input id="parent" name="parent" type="text" autocomplete="name" maxlength="70" required data-placeholder="namePlaceholder" placeholder="Как к вам обращаться?"><label for="grade" data-i18n="labelGrade">Класс ученика</label><select id="grade" name="grade" required><option value="" data-i18n="gradePlaceholder">Выберите класс</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option></select><label for="track" data-i18n="labelCourse">Направление</label><select id="track" name="track" required><option value="" data-i18n="coursePlaceholder">Выберите направление</option>
+          <option value="python" data-i18n="optionPython">Python и создание игр</option>
+          <option value="web" data-i18n="optionWeb">Сайты и AI-автоматизация</option></select><button class="btn primary submit" type="submit"><span data-i18n="submit">Записаться через WhatsApp</span> ↗</button><small data-i18n="privacy">Данные не сохраняются на сайте. Сообщение откроется в WhatsApp.</small>
+        </form>
+      </section>
+    </main>
+    <!-- Подвал сайта и контакты -->
+    <footer class="footer container">
+      <a class="brand" href="#home" aria-label="На главную"><span class="brand-mark">&lt;/&gt;</span></a><span data-i18n="footer">Создаём технологии, а не просто используем их.</span><a href="https://wa.me/77766962244" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
